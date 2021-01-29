@@ -1,22 +1,28 @@
 {% load static %}
 <html>
     <head>
-        <title>Django blog</title>
+        <title>Horror Fans Blog</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     </head>
     <body>
-        <div>
+        <div class="header-pic">
             <header>
                 <div class='nav-left'>
-                    <h1><a href="{% url 'home' %}">Django blog</a></h1>
+                    <h1><a href="{% url 'home' %}">Horror Fans Blog</a></h1>
                 </div>
                 <div class='nav-right'></div>
-                    <a href="{% url 'post_new' %}">+ New Blog Post</a>
+                    <a href="{% url 'post_new' %}"><i class="fas fa-plus"></i>New Blog Post</a>
                 </div>
                 {% block content %}
                 {% endblock content %}
         </div>
     </body>
+    <footer>
+        <div class="container">
+        <p><small>All the copyright reserved &copy; Nathan Ortiz</small></p>
+        </div>
+    </footer>
 </html>

@@ -1,9 +1,17 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
-    <h1>Edit post</h1>
-    <form action="" method="post">{% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" value="Update">
-    </form>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/post_base.css' %}">
+    </head>
+    <body>
+        <h1>Edit post</h1>
+        <form action="" method="post">{% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Update">
+        </form>
+    </body>
+</html>
 {% endblock content %}

@@ -1,0 +1,21 @@
+.post-entry h2 {
+  color: rgb(160, 8, 8);
+}
+.post-entry p {
+  margin-bottom: 2rem;
+  color: rgb(22, 22, 22);
+}
+.post-entry a {
+  color: rgb(160, 8, 8);
+  margin-right: 1rem;
+}
+.post-entry a:hover {
+  color: rgb(216, 17, 17);
+}
+.post-entry {
+  margin-left: 0.5rem;
+}
+.post-entry i {
+  margin-right: 1rem;
+  color: rgb(160, 8, 8);
+}
