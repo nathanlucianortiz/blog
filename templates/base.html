@@ -16,13 +16,18 @@
                 <div class='nav-right'></div>
                     <a href="{% url 'post_new' %}"><i class="fas fa-plus"></i>New Blog Post</a>
                 </div>
-                {% block content %}
-                {% endblock content %}
+            </header>
+            <div class="auth">
+            {% if user.is_authenticated %}
+                <p>Welcome {{ user.username }}!</p>
+                <p><a href="{% url 'logout' %}">Log out</a></p>
+            {% else %}
+                <p>You are not logged in.</p>
+                <a href="{% url 'login' %}">Log In</a>
+            {% endif %}
+            </div>
+        {% block content %}
+        {% endblock content %}
         </div>
     </body>
-    <footer>
-        <div class="container">
-        <p><small>All the copyright reserved &copy; Nathan Ortiz</small></p>
-        </div>
-    </footer>
 </html>

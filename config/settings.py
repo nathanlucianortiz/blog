@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
     'blog',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -125,3 +126,6 @@ STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))]
 STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))
 # STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
