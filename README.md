@@ -1,3 +1,5 @@
-# blog
+# Horror Fans Blog
 
-Link to heroku deploy: https://still-chamber-56731.herokuapp.com/
+* Practice project for creating and updating blog posts.
+
+* Link to heroku deploy: https://still-chamber-56731.herokuapp.com/
